@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>
+{Private Sub Worksheet_Change(ByVal Target As Range)
+
+    Set Target = Intersect(Target, [변환셀])
+    If Not Target Is Nothing Then
+
+        Application.EnableEvents = False
+
+        Dim cell As Range
+        For Each cell In Target
+            Select Case cell
+                Case 47890: cell = "test1"
+                Case 50214: cell = "test2"
+                Case 37705: cell = "test3"
+            End Select
+        Next
+        Application.EnableEvents = True
+
+    End If
+End Sub}
+</h1>
+<script>
+console.log("DMOA_MP_Test01");
+</script>
+</body>
+</html>
