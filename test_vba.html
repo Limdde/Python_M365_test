@@ -3,23 +3,23 @@
 <body>
 <h1>Private Sub Worksheet_Change(ByVal Target As Range)</h1>
 
-    <h2>Set Target = Intersect(Target, [변환셀])</h2>
-    If Not Target Is Nothing Then
+    <h1>Set Target = Intersect(Target, [변환셀])</h1>
+    <h1>If Not Target Is Nothing Then</h1>
 
-        Application.EnableEvents = False
+        <h1>Application.EnableEvents = False</h1>
 
-        Dim cell As Range
-        For Each cell In Target
-            Select Case cell
-                Case 47890: cell = "test1"
-                Case 50214: cell = "test2"
-                Case 37705: cell = "test3"
-            End Select
+        <h1>Dim cell As Range</h1>
+        <h1>For Each cell In Target</h1>
+</body>Select Case cell
+                <h1>Case 47890: cell = "test1"</h1>
+                <h1>Case 50214: cell = "test2"</h1>
+                <h1>Case 37705: cell = "test3"</h1>
+            <h1>End Select</h1>
         Next
         Application.EnableEvents = True
 
     End If
-End Sub</h1>
+End Sub
 <script>
 console.log("DMOA_MP_Test01");
 </script>
