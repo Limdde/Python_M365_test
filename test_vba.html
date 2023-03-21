@@ -2,9 +2,9 @@
 <html>
 <body>
 <h1>
-{Private Sub Worksheet_Change(ByVal Target As Range)
+<Private Sub Worksheet_Change(ByVal Target As Range)
 
-    Set Target = Intersect(Target, [변환셀])
+    Set Target = Intersect(Target,[변환셀])
     If Not Target Is Nothing Then
 
         Application.EnableEvents = False
@@ -20,7 +20,7 @@
         Application.EnableEvents = True
 
     End If
-End Sub}
+End Sub></Private>
 </h1>
 <script>
 console.log("DMOA_MP_Test01");
