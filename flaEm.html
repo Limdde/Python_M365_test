@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>메뉴 바</title>
+	<style>
+		/* 메뉴 바 스타일 */
+		nav {
+			background-color: #333;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 50px;
+		}
+		
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+		}
+		
+		nav li {
+			margin: 0 10px;
+		}
+		
+		nav a {
+			color: #fff;
+			text-decoration: none;
+			padding: 5px;
+		}
+		
+		nav a:hover {
+			background-color: #555;
+		}
+		
+		/* 하위 메뉴 스타일 */
+		nav ul ul {
+			display: none;
+			position: absolute;
+			background-color: #333;
+			z-index: 1;
+		}
+		
+		nav ul li:hover > ul {
+			display: inherit;
+		}
+		
+		nav ul ul li {
+			float: none;
+			position: relative;
+			margin: 0;
+			border-top: 1px solid #555;
+			border-bottom: 1px solid #555;
+			width: 200px;
+			text-align: left;
+		}
+		
+		nav ul ul li a {
+			padding: 5px;
+			color: #fff;
+			display: block;
+		}
+		
+		nav ul ul li a:hover {
+			background-color: #555;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li>
+				<a href="#">Products</a>
+				<ul>
+					<li><a href="#">Product 1</a></li>
+					<li><a href="#">Product 2</a></li>
+					<li><a href="#">Product 3</a></li>
+					<li><a href="#">Product 4</a></li>
+					<li><a href="#">Product 5</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">Language</a>
+				<ul>
+					<li><a href="#">English</a></li>
+					<li><a href="#">Korean</a></li>
+					<li><a href="#">Chinese</a></li>
+					<li><a href="#">Japanese</a></li>
+					<li><a href="#">Spanish</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">Service</a>
+				<ul>
+					<li><a href="#">Service 1</a></li>
+					<li><a href="#">Service 2</a></li>
+					<li><a href="#">Service 3</a></li>
+					<li><a href="#">Service 4</a></li>
+					<li><a href="#">Service 5</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">Support</a>
+				<ul
