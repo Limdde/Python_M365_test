@@ -52,6 +52,3 @@ if response.status_code == 200:
     # Excel 파일 저장 및 닫기
     workbook.save(EXCEL_FILE_NAME)
     workbook.close()
-
-else:
-    print("Failed to get message with error code:", response.status_code)

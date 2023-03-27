@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Limdde</title>
+	<style>
+		/* CSS 스타일링 */
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #333;
+		}
+		
+		nav li {
+			float: left;
+		}
+		
+		nav li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+		
+		nav li a:hover {
+			background-color: #111;
+		}
+		
+		/* 하위 메뉴 */
+		nav li ul {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		}
+		
+		nav li:hover ul {
+			display: block;
+		}
+		
+		nav li ul li {
+			float: none;
+		}
+		
+		nav li ul li a {
+			padding: 12px 16px;
+			color: #333;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+		
+		nav li ul li a:hover {
+			background-color: #f1f1f1;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Products</a>
+				<ul>
+					<li><a href="#">EXO</a></li>
+					<li><a href="#">SPO</a></li>
+					<li><a href="#">Teams</a></li>
+					<li><a href="#">Azure AD</a></li>
+					<li><a href="#">Azure RMS</a></li>
+					<li><a href="#">Intune</a></li>
+					<li><a href="#">On-Premise</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Languages</a>
+				<ul>
+					<li><a href="#">Python</a></li>
+					<li><a href="#">JavaScript</a></li>
+					<li><a href="#">Java</a></li>
+					<li><a href="#">C#</a></li>
+					<li><a href="#">C++</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Support</a>
+				<ul>
+					<li><a href="#">Support 1</a></li>
+					<li><a href="#">Support 2</a></li>
+					<li><a href="#">Support 3</a></li>
+					<li><a href="#">Support 4</a></li>
+					<li><a href="#">Support 5</a></li>
+				</ul>
