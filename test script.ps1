@@ -22,7 +22,7 @@ $Module=Get-Module -Name MicrosoftTeams -ListAvailable
 if($Module.count -eq 0)
 {
 Write-Host MicrosoftTeams module is not available  -ForegroundColor yellow 
- $Confirm= Read-Host Are you sure you want to install module? [Y] Yes [N] No
+ $Confirm= Read-Host Are you suy     re you want to install module? [Y] Yes [N] No
 if($Confirm -match "[yY]")
 {
   Install-Module MicrosoftTeams
